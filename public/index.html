@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>WebRTC Demo for Masters </title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <div id="dashboard">
+            <form id="form" style="width: 100%">
+                <label>
+                    Create a new room
+                    <input type="text" placeholder="Create a new room" />
+                    <input type="submit" value="Create" />
+                </label>
+            </form>
+            <div>
+                <label>
+                    Type a room to connect to:
+                    <input id="connect-room" type="text" placeholder="Enter room name to connect" />
+                    <button id="connect"> Connect </button>
+                </label>
+            </div>
+            <ul id="roomList"></ul>
+        </div>
+        <div id="stream" style="display: none">
+            <video id="client" autoplay="true"></video>
+            <video id="guest" autoplay="true"></video>
+            <div>
+                <button id="hang-up">Hang Up </button>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
