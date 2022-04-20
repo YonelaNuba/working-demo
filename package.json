@@ -1,7 +1,6 @@
 {
   "name": "working-demo",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,8 +10,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "detectrtc": "^1.4.1",
     "express": "^4.17.2",
+    "fs": "0.0.1-security",
     "nodemon": "^2.0.15",
-    "socket.io": "^4.4.1"
-  }
+    "socket.io": "^4.4.1",
+    "tippy.js": "^6.3.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YonelaNuba/webrtc-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YonelaNuba/webrtc-demo/issues"
+  },
+  "homepage": "https://github.com/YonelaNuba/webrtc-demo#readme",
+  "description": ""
 }
